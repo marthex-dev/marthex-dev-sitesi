@@ -1,0 +1,12 @@
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  include(user/db.php): Failed to open stream: No such file or directory in /home/marthexd/public_html/inc/head.php on line 2
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  include(user/db.php): Failed to open stream: No such file or directory in /home/marthexd/public_html/inc/head.php on line 2
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  include(): Failed opening 'user/db.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/marthexd/public_html/inc/head.php on line 2
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  Undefined variable $sayfa in /home/marthexd/public_html/inc/head.php on line 16
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  Undefined variable $sayfa in /home/marthexd/public_html/inc/head.php on line 21
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  Undefined variable $sayfa in /home/marthexd/public_html/inc/head.php on line 26
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  Undefined variable $sayfa in /home/marthexd/public_html/inc/head.php on line 34
+[24-Dec-2024 15:33:15 UTC] PHP Warning:  Undefined variable $conn in /home/marthexd/public_html/inc/head.php on line 215
+[24-Dec-2024 15:33:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/marthexd/public_html/inc/head.php:215
+Stack trace:
+#0 {main}
+  thrown in /home/marthexd/public_html/inc/head.php on line 215
