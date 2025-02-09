@@ -21,7 +21,7 @@ Bu proje, **Panelli PHP Teması** olarak adlandırılmış olup, yaklaşık 1 y�
    `user/db.php` dosyası içinde veritabanı bilgilerinizi girmeniz gerekmektedir.
 
 2. **SQL Dosyasının Yüklenmesi:**  
-   Projede yer alan SQL dosyasını (`sonayak_marthex.sql`) phpMyAdmin üzerinden içeri aktarın.
+   Projede yer alan SQL dosyasını (`marthexd_sonayak.sql`) phpMyAdmin üzerinden içeri aktarın.
 
 3. **Site Kurulumu:**  
    Kurulum tamamlandıktan sonra, web sitesi üzerinden kayıt olun.
