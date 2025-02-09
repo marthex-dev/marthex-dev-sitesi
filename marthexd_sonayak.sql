@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost:3306
--- Üretim Zamanı: 08 Şub 2025, 12:33:32
+-- Üretim Zamanı: 09 Şub 2025, 10:34:36
 -- Sunucu sürümü: 10.6.18-MariaDB
 -- PHP Sürümü: 8.3.8
 
@@ -44,6 +44,7 @@ CREATE TABLE `discord_products` (
 --
 
 INSERT INTO `discord_products` (`id`, `title`, `description`, `note`, `yazi`, `price`, `created_at`, `image_url`, `ikinci_resim`) VALUES
+(15, 'Guard Bot', 'Sunucuya karşı saldırıları engeller ve sunucuyu tehlikelere karşı korur.', 'Discord botun altyapı kodları verilmez. Discord botu kendi sunucumuzda barındırılır.', '- Sunucuya yeni biri katıldığında kayıt kanalına hoşgeldin mesajı atar ve kayıtsız rolü verir.\r\n\r\n- Erkek ve kız için ayrı kayıt komutu vardır. İsteğe göre tek kayıt yapılabilir.\r\n\r\n- Yetkili kişi kayıt komutu ile kayıtsız kişiyi kayıt eder.', 30.00, '2024-07-05 19:49:55', 'new/discord-k.png', 'new/3atcqcb.png,new/ksjqy05.png');
 
 -- --------------------------------------------------------
 
@@ -58,12 +59,6 @@ CREATE TABLE `messages` (
   `message` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_turkish_ci;
-
---
--- Tablo döküm verisi `messages`
---
-
-INSERT INTO `messages` (`id`, `request_id`, `user_id`, `message`, `created_at`) VALUES
 
 -- --------------------------------------------------------
 
@@ -88,6 +83,7 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `title`, `description`, `note`, `yazi`, `zip_file_path`, `header_image_path`, `bot_images_paths`, `created_at`) VALUES
+(5, 'Hostify - Hosting HTML & WHMCS', 'Hostify, web hosting ihtiyaçlarınızı karşılamak için tasarlanmış güçlü ve kullanıcı dostu bir çözümdür.', 'Dosyanın içinde WHMCS ve HTML şablonları yer almaktadır. Ücretsiz bir şekilde indirebilirsiniz.', '            <p>Hostify, web sitenizin ihtiyaç duyduğu güçlü ve güvenilir hosting çözümlerini sunan bir platformdur. HTML ve WHMCS entegrasyonuyla, hem küçük işletmelerin hem de büyük kurumsal firmaların web hosting gereksinimlerini karşılar.</p>\n            \n            <h2>Hostify\'nin Avantajları:</h2>\n            <ul>\n                <li><strong>HTML ve WHMCS Uyumlu Tasarım:</strong> Profesyonel görünümlü siteler için modern HTML tasarımı.</li>\n                <li><strong>Esnek Hosting Seçenekleri:</strong> Paylaşımlı, VPS, bulut ve özel sunucu seçenekleriyle özelleştirilmiş hosting planları.</li>\n                <li><strong>Güvenilir Performans ve Güvenlik:</strong> Yüksek performans ve güvenlik önlemleriyle sitenizi korur.</li>\n                <li><strong>Profesyonel Teknik Destek:</strong> 7/24 erişilebilir destek ekibiyle hızlı çözümler sunar.</li>\n                <li><strong>Kullanıcı Dostu Yönetim Paneli:</strong> Kolay kullanım ve yönetim paneliyle hosting hesabınızı yönetin.</li>\n            </ul>\n            \n            <p>Hostify, teknolojik altyapısı ve kullanıcı odaklı hizmet anlayışıyla işletmenizin online varlığını güvence altına alır. Güvenilir hosting çözümleri için Hostify\'i tercih edin ve dijital dünyada öne çıkın.</p>\n        ', 'new/uploads/hostifyhtml-12feb2023_3.rar', 'new/uploads/01-Preview.__large_preview.avif', 'new/uploads/t2zodcasarlok9coznk2.jpg,', '2024-07-05 18:06:40');
 
 -- --------------------------------------------------------
 
@@ -103,13 +99,6 @@ CREATE TABLE `requests` (
   `status` enum('Açık','Kapalı') DEFAULT 'Açık',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_turkish_ci;
-
---
--- Tablo döküm verisi `requests`
---
-
-INSERT INTO `requests` (`id`, `title`, `category`, `user_id`, `status`, `created_at`) VALUES
-
 
 -- --------------------------------------------------------
 
@@ -133,7 +122,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `profile_photo`, `bio`, `updated_at`) VALUES
-(1, 'Marthex', 'admin@gmail.com', '$2y$10$4NOd9vAJucDtlr6eJfxBCO9nLPAVGgjIVuC6kQiTYu7ObXanqUXeO', 'Admin', 'new/profile/200w.gif', NULL, '2024-07-05 17:58:38'),
+(1, 'Marthex', 'mehmetg061@gmail.com', '$2y$10$4NOd9vAJucDtlr6eJfxBCO9nLPAVGgjIVuC6kQiTYu7ObXanqUXeO', 'Admin', 'new/profile/200w.gif', NULL, '2024-07-05 17:58:38');
+
 --
 -- Dökümü yapılmış tablolar için indeksler
 --
